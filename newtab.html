@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Tab</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="page-shell">
+      <header class="top-bar" aria-label="Chrome quick actions">
+        <div class="time-card" aria-live="polite">
+          <span id="clock-time">00:00</span>
+          <span id="clock-date">Loading date</span>
+        </div>
+
+        <nav class="quick-actions" aria-label="Google apps">
+          <div class="gmail-control">
+            <button id="gmail-button" class="text-button" type="button">Gmail</button>
+            <button id="gmail-menu-button" class="icon-button" type="button" aria-label="Choose Gmail account" aria-haspopup="menu" aria-expanded="false">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M7.2 9.35a.9.9 0 0 1 1.27 0L12 12.88l3.53-3.53a.9.9 0 1 1 1.27 1.27l-4.16 4.15a.9.9 0 0 1-1.28 0L7.2 10.62a.9.9 0 0 1 0-1.27Z"></path>
+              </svg>
+            </button>
+            <div id="gmail-menu" class="menu" role="menu" hidden></div>
+          </div>
+
+          <button id="account-button" class="account-button" type="button" aria-label="Open Google account">
+            <span>G</span>
+          </button>
+        </nav>
+      </header>
+
+      <section class="hero" aria-label="Greeting">
+        <h1 id="greeting">Good day</h1>
+      </section>
+
+      <section class="dashboard" aria-label="New tab dashboard">
+        <section class="panel" aria-labelledby="tab-groups-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Open Windows</p>
+              <h2 id="tab-groups-title">Tab Groups</h2>
+            </div>
+            <button id="refresh-tabs" class="icon-button subtle" type="button" aria-label="Refresh tab groups">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M17.66 6.34A8 8 0 1 0 19.73 14a.9.9 0 0 0-1.76-.38 6.2 6.2 0 1 1-1.57-5.97h-2.65a.9.9 0 1 0 0 1.8h4.77a.9.9 0 0 0 .9-.9V3.78a.9.9 0 1 0-1.8 0v2.56h.04Z"></path>
+              </svg>
+            </button>
+          </div>
+          <div id="tab-groups" class="list-stack"></div>
+        </section>
+
+        <section class="panel" aria-labelledby="bookmarks-title">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Saved</p>
+              <h2 id="bookmarks-title">Bookmarks</h2>
+            </div>
+            <button id="refresh-bookmarks" class="icon-button subtle" type="button" aria-label="Refresh bookmarks">
+              <svg aria-hidden="true" viewBox="0 0 24 24">
+                <path d="M17.66 6.34A8 8 0 1 0 19.73 14a.9.9 0 0 0-1.76-.38 6.2 6.2 0 1 1-1.57-5.97h-2.65a.9.9 0 1 0 0 1.8h4.77a.9.9 0 0 0 .9-.9V3.78a.9.9 0 1 0-1.8 0v2.56h.04Z"></path>
+              </svg>
+            </button>
+          </div>
+          <div id="bookmarks" class="list-stack"></div>
+        </section>
+      </section>
+    </main>
+
+    <script src="newtab.js"></script>
+  </body>
+</html>

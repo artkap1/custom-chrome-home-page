@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Custom Chrome Home Page",
+  "description": "A polished new tab page with collapsible bookmarks, tab groups, and quick Gmail account switching.",
+  "version": "0.1.0",
+  "chrome_url_overrides": {
+    "newtab": "newtab.html"
+  },
+  "permissions": [
+    "bookmarks",
+    "favicon",
+    "tabs",
+    "tabGroups"
+  ]
+}
